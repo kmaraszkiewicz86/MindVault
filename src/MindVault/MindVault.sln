@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.UI", "MindVault.UI\MindVault.UI.csproj", "{E3AAD1C4-EB9A-45F1-9588-699DF1FFDD6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.ApplicationLayer", "MindVault.ApplicationLayer\MindVault.ApplicationLayer.csproj", "{BA22A970-A958-4DE5-9CBF-2985EFB887A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.Domain", "MindVault.Domain\MindVault.Domain.csproj", "{1EBD9FF9-3DBE-4263-B244-C06B9A8B4F9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.Infrastructure", "MindVault.Infrastructure\MindVault.Infrastructure.csproj", "{B9E5A8E8-2B47-45B5-B783-A8F090F4A607}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Onion", "Onion", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.DependencyInjection", "MindVault.DependencyInjection\MindVault.DependencyInjection.csproj", "{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.Presentation", "MindVault.Presentation\MindVault.Presentation.csproj", "{889128FA-4580-418B-8CDD-320ACA6E4925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3AAD1C4-EB9A-45F1-9588-699DF1FFDD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3AAD1C4-EB9A-45F1-9588-699DF1FFDD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3AAD1C4-EB9A-45F1-9588-699DF1FFDD6B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E3AAD1C4-EB9A-45F1-9588-699DF1FFDD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3AAD1C4-EB9A-45F1-9588-699DF1FFDD6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA22A970-A958-4DE5-9CBF-2985EFB887A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA22A970-A958-4DE5-9CBF-2985EFB887A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA22A970-A958-4DE5-9CBF-2985EFB887A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA22A970-A958-4DE5-9CBF-2985EFB887A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBD9FF9-3DBE-4263-B244-C06B9A8B4F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBD9FF9-3DBE-4263-B244-C06B9A8B4F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBD9FF9-3DBE-4263-B244-C06B9A8B4F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBD9FF9-3DBE-4263-B244-C06B9A8B4F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E5A8E8-2B47-45B5-B783-A8F090F4A607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E5A8E8-2B47-45B5-B783-A8F090F4A607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E5A8E8-2B47-45B5-B783-A8F090F4A607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E5A8E8-2B47-45B5-B783-A8F090F4A607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889128FA-4580-418B-8CDD-320ACA6E4925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889128FA-4580-418B-8CDD-320ACA6E4925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889128FA-4580-418B-8CDD-320ACA6E4925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889128FA-4580-418B-8CDD-320ACA6E4925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA22A970-A958-4DE5-9CBF-2985EFB887A4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1EBD9FF9-3DBE-4263-B244-C06B9A8B4F9F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B9E5A8E8-2B47-45B5-B783-A8F090F4A607} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{889128FA-4580-418B-8CDD-320ACA6E4925} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4002BB89-26B4-4290-839E-24301AE8B23C}
+	EndGlobalSection
+EndGlobal
