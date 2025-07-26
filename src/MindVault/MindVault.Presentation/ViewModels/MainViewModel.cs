@@ -15,14 +15,14 @@ namespace MindVault.Presentation.ViewModels
             set => SetProperty(ref _categories, value);
         }
 
-        private Category _selectedCategory;
+        private Category _selectedCategory = default!;
         public Category SelectedCategory
         {
             get => _selectedCategory ?? new Category { Name = "Brak wybranej kategorii" };
             set => SetProperty(ref _selectedCategory, value);
         }
 
-        private string _newCategoryName;
+        private string _newCategoryName = string.Empty;
         public string NewCategoryName
         {
             get => _newCategoryName;
@@ -32,6 +32,7 @@ namespace MindVault.Presentation.ViewModels
         public ICommand ShowAddCategoryPopupCommand { get; }
         public ICommand AddCategoryCommand { get; }
         public ICommand NavigateToAddNoteCommand { get; }
+        public ICommand CheckAuthenticationCommand { get; }
 
         public MainViewModel()
         {
@@ -40,6 +41,13 @@ namespace MindVault.Presentation.ViewModels
             NavigateToAddNoteCommand = new Command(async () =>
             {
                 await Shell.Current.GoToAsync("AddNotePage");
+            });
+            CheckAuthenticationCommand = new Command(async () =>
+            {
+                if (!IsAuthenticated)
+                {
+                    await Shell.Current.GoToAsync("//LoginPage");
+                }
             });
         }
 

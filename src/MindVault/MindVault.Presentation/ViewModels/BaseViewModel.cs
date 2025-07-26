@@ -12,6 +12,8 @@ namespace MindVault.Presentation.ViewModels
             set => SetProperty(ref isBusy, value);
         }
 
+        public virtual bool IsAuthenticated => false;
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "")
