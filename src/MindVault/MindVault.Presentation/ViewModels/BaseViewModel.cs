@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 
 namespace MindVault.Presentation.ViewModels
 {
@@ -11,10 +12,22 @@ namespace MindVault.Presentation.ViewModels
             get => isBusy;
             set => SetProperty(ref isBusy, value);
         }
+        public ICommand CheckAuthenticationCommand { get; }
 
         public virtual bool IsAuthenticated => false;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        public BaseViewModel()
+        {
+            CheckAuthenticationCommand = new Command(async () =>
+            {
+                if (!IsAuthenticated)
+                {
+                    await Shell.Current.GoToAsync("//LoginPage");
+                }
+            });
+        }
 
         protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "")
         {

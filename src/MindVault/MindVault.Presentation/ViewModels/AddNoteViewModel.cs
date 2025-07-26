@@ -21,7 +21,6 @@ namespace MindVault.Presentation.ViewModels
 
         public ICommand CancelNoteCommand { get; }
         public ICommand SaveNoteCommand { get; }
-        public ICommand CheckAuthenticationCommand { get; }
 
         public AddNoteViewModel()
         {
@@ -33,14 +32,6 @@ namespace MindVault.Presentation.ViewModels
             CancelNoteCommand = new Command(async () =>
             {
                 await Shell.Current.GoToAsync("..");
-            });
-
-            CheckAuthenticationCommand = new Command(async () =>
-            {
-                if (!IsAuthenticated)
-                {
-                    await Shell.Current.GoToAsync("//LoginPage");
-                }
             });
         }
     }

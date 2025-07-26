@@ -32,7 +32,6 @@ namespace MindVault.Presentation.ViewModels
         public ICommand ShowAddCategoryPopupCommand { get; }
         public ICommand AddCategoryCommand { get; }
         public ICommand NavigateToAddNoteCommand { get; }
-        public ICommand CheckAuthenticationCommand { get; }
 
         public MainViewModel()
         {
@@ -41,13 +40,6 @@ namespace MindVault.Presentation.ViewModels
             NavigateToAddNoteCommand = new Command(async () =>
             {
                 await Shell.Current.GoToAsync("AddNotePage");
-            });
-            CheckAuthenticationCommand = new Command(async () =>
-            {
-                if (!IsAuthenticated)
-                {
-                    await Shell.Current.GoToAsync("//LoginPage");
-                }
             });
         }
 

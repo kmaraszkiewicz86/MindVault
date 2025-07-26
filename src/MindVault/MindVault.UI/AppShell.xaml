@@ -19,4 +19,7 @@
     <ShellContent Title="Add a new note" Route="AddNotePage"
                   ContentTemplate="{DataTemplate views:AddNotePage}" />
 
+    <ShellContent Title="Logout" Route="AddNotePage"
+                  ContentTemplate="{DataTemplate views:LogoutPage}" />
+
 </Shell>
