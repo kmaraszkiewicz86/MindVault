@@ -20,6 +20,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="12.0.0" />
+		<PackageReference Include="Kmaraszkiewicz86.Maui.Behaviors" Version="0.1.3" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.70" />
 	</ItemGroup>
 

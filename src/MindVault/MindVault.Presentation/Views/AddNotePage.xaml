@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:behavoirs="clr-namespace:MindVault.Presentation.Behaviors"
+             xmlns:behaviors="clr-namespace:Kmaraszkiewicz86.Maui.Behaviors;assembly=Kmaraszkiewicz86.Maui.Behaviors"
              x:Class="MindVault.Presentation.Views.AddNotePage"
              Title="AddNotePage">
     <ContentPage.Behaviors>
-        <behavoirs:EventToCommandBehavior EventName="Appearing" Command="{Binding CheckAuthenticationCommand}" />
+        <behaviors:EventToCommandBehavior EventName="Appearing" Command="{Binding CheckAuthenticationCommand}" />
     </ContentPage.Behaviors>
     <VerticalStackLayout Padding="20">
         <Entry Placeholder="Tytuł" Text="{Binding NoteTitle}" />

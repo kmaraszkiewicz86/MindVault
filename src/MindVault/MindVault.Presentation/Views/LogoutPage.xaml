@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:behaviors="clr-namespace:Kmaraszkiewicz86.Maui.Behaviors;assembly=Kmaraszkiewicz86.Maui.Behaviors"
              x:Class="MindVault.Presentation.Views.LogoutPage"
              Title="Logout">
     <ContentPage.Behaviors>
-        <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding LogoutCommand}" />
+        <behaviors:EventToCommandBehavior EventName="Appearing" Command="{Binding LogoutCommand}" />
     </ContentPage.Behaviors>
     <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
         <Label Text="Logging out..." FontSize="24" HorizontalOptions="Center" />
