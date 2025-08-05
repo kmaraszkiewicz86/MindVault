@@ -7,6 +7,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Kmaraszkiewicz86.SimpleCqrs" Version="0.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <ProjectReference Include="..\MindVault.Domain\MindVault.Domain.csproj" />
 	</ItemGroup>
 
