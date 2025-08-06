@@ -67,6 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\MindVault.DependencyInjection.Maui\MindVault.DependencyInjection.Maui.csproj" />
 	  <ProjectReference Include="..\MindVault.DependencyInjection\MindVault.DependencyInjection.csproj" />
 	  <ProjectReference Include="..\MindVault.Presentation\MindVault.Presentation.csproj" />
 	</ItemGroup>

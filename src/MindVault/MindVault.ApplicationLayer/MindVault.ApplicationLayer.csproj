@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\MindVault.Domain\MindVault.Domain.csproj" />
+	  <ProjectReference Include="..\MindVault.Models\MindVault.Models.csproj" />
 	</ItemGroup>
 
 </Project>

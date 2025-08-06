@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using MindVault.DependencyInjection;
 
 namespace MindVault.UI
 {
@@ -16,6 +17,8 @@ namespace MindVault.UI
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddMindVaultInfrastructure();
 
 #if DEBUG
     		builder.Logging.AddDebug();

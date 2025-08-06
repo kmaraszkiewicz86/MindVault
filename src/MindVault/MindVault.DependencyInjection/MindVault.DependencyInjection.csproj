@@ -8,6 +8,15 @@
 
 	<ItemGroup>
 	  <PackageReference Include="Kmaraszkiewicz86.SimpleCqrs" Version="0.1.1" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MindVault.ApplicationLayer\MindVault.ApplicationLayer.csproj" />
+	  <ProjectReference Include="..\MindVault.Domain\MindVault.Domain.csproj" />
+	  <ProjectReference Include="..\MindVault.Infrastructure.Maui\MindVault.Infrastructure.Maui.csproj" />
+	  <ProjectReference Include="..\MindVault.Infrastructure\MindVault.Infrastructure.csproj" />
+	  <ProjectReference Include="..\MindVault.Models\MindVault.Models.csproj" />
 	</ItemGroup>
 
 </Project>

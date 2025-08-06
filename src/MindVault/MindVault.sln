@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.Presentation", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.Models", "MindVault.Models\MindVault.Models.csproj", "{6643B1E4-32E0-4BED-987E-CEEDDB3DEB36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.Infrastructure.Maui", "MindVault.Infrastructure.Maui\MindVault.Infrastructure.Maui.csproj", "{99BBA99D-4D11-489C-B861-38A3EAE31D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindVault.DependencyInjection.Maui", "MindVault.DependencyInjection.Maui\MindVault.DependencyInjection.Maui.csproj", "{44322A38-9B58-4202-AE34-3B6221494E51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,14 @@ Global
 		{6643B1E4-32E0-4BED-987E-CEEDDB3DEB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6643B1E4-32E0-4BED-987E-CEEDDB3DEB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6643B1E4-32E0-4BED-987E-CEEDDB3DEB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BBA99D-4D11-489C-B861-38A3EAE31D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BBA99D-4D11-489C-B861-38A3EAE31D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BBA99D-4D11-489C-B861-38A3EAE31D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BBA99D-4D11-489C-B861-38A3EAE31D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44322A38-9B58-4202-AE34-3B6221494E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44322A38-9B58-4202-AE34-3B6221494E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44322A38-9B58-4202-AE34-3B6221494E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44322A38-9B58-4202-AE34-3B6221494E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +77,8 @@ Global
 		{EC4012C4-74DF-46EA-9CB2-DAA287C98F5C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{889128FA-4580-418B-8CDD-320ACA6E4925} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{6643B1E4-32E0-4BED-987E-CEEDDB3DEB36} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{99BBA99D-4D11-489C-B861-38A3EAE31D86} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{44322A38-9B58-4202-AE34-3B6221494E51} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4002BB89-26B4-4290-839E-24301AE8B23C}
