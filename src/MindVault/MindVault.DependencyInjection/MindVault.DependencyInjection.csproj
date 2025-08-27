@@ -14,7 +14,6 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\MindVault.ApplicationLayer\MindVault.ApplicationLayer.csproj" />
 	  <ProjectReference Include="..\MindVault.Domain\MindVault.Domain.csproj" />
-	  <ProjectReference Include="..\MindVault.Infrastructure.Maui\MindVault.Infrastructure.Maui.csproj" />
 	  <ProjectReference Include="..\MindVault.Infrastructure\MindVault.Infrastructure.csproj" />
 	  <ProjectReference Include="..\MindVault.Models\MindVault.Models.csproj" />
 	</ItemGroup>

@@ -22,4 +22,8 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\MindVault.Domain\MindVault.Domain.csproj" />
+	</ItemGroup>
+
 </Project>
