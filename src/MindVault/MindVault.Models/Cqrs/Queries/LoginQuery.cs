@@ -1,9 +1,9 @@
-namespace MindVault.Models.Models.Commands
+namespace MindVault.Models.Cqrs.Queries
 {
     /// <summary>
-    /// Represents a save an user password.
+    /// Represents a query containing login credentials for authentication purposes.
     /// </summary>
-    public class LoginCommand
+    public class LoginQuery
     {
         /// <summary>
         /// Gets or sets the password associated with the user or system.

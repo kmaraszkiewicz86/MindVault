@@ -1,4 +1,4 @@
-using MindVault.Models.Models.Queries;
+using MindVault.Models.Cqrs.Queries;
 
 namespace MindVault.ApplicationLayer.CQRS.Queries.Handlers
 {

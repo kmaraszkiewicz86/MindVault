@@ -1,4 +1,4 @@
-using MindVault.Models.Models.Commands;
+using MindVault.Models.Cqrs.Commands;
 
 namespace MindVault.ApplicationLayer.CQRS.Commands.Handlers
 {
