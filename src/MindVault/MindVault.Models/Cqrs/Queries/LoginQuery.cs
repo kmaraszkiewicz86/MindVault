@@ -1,9 +1,12 @@
+using FluentResults;
+using SimpleCqrs;
+
 namespace MindVault.Models.Cqrs.Queries
 {
     /// <summary>
     /// Represents a query containing login credentials for authentication purposes.
     /// </summary>
-    public class LoginQuery
+    public class LoginQuery : IQuery<Result>
     {
         /// <summary>
         /// Gets or sets the password associated with the user or system.

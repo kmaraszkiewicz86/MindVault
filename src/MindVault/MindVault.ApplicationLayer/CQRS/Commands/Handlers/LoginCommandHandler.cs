@@ -1,4 +1,6 @@
+using FluentResults;
 using MindVault.Models.Cqrs.Commands;
+using SimpleCqrs;
 
 namespace MindVault.ApplicationLayer.CQRS.Commands.Handlers
 {
@@ -8,11 +10,11 @@ namespace MindVault.ApplicationLayer.CQRS.Commands.Handlers
     /// <remarks>This method processes the provided <see cref="LoginCommand"/> to handle user login
     /// operations.  Ensure that the <paramref name="command"/> contains valid login credentials before invoking this
     /// method.</remarks>
-    public class LoginCommandHandler
+    public class LoginCommandHandler : IAsyncCommandHandler<LoginCommand, Result>
     {
-        public void Handle(LoginCommand command)
+        public Task<Result> HandleAsync(LoginCommand command, CancellationToken cancellationToken = default)
         {
-            // TODO: Implement login handling (e.g. save login/password)
+            return Task.FromResult(Result.Fail("fail"));
         }
     }
 }

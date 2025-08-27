@@ -1,4 +1,6 @@
+using FluentResults;
 using MindVault.Models.Cqrs.Queries;
+using SimpleCqrs;
 
 namespace MindVault.ApplicationLayer.CQRS.Queries.Handlers
 {
@@ -8,11 +10,11 @@ namespace MindVault.ApplicationLayer.CQRS.Queries.Handlers
     /// <remarks>This class is responsible for managing the execution of login queries.  It processes
     /// the provided <see cref="LoginQuery"/> to perform operations such as  validating user credentials or initiating
     /// authentication workflows.</remarks>
-    public class LoginQueryHandler
+    public class LoginQueryHandler : IAsyncQueryHandler<LoginQuery, Result>
     {
-        public void Handle(LoginQuery query)
+        public Task<Result> HandleAsync(LoginQuery query, CancellationToken cancellationToken = default)
         {
-            // TODO: Implement login query handling (e.g., login/password verification)
+            return Task.FromResult(Result.Fail("fail"));
         }
     }
 }

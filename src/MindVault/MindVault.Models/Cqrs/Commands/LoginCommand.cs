@@ -1,9 +1,12 @@
+using FluentResults;
+using SimpleCqrs;
+
 namespace MindVault.Models.Cqrs.Commands
 {
     /// <summary>
     /// Represents a save an user password.
     /// </summary>
-    public class LoginCommand
+    public class LoginCommand: ICommand<Result>
     {
         /// <summary>
         /// Gets or sets the password associated with the user or system.
